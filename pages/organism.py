@@ -1,6 +1,8 @@
 import sqlite3
 import tkinter as tk
 from tkinter import ttk, messagebox
+from ..database import init_db  # Relative import
+from ..ui_components import setup_styles  # Relative import
 
 def add_organism_page(app):
     for widget in app.winfo_children():

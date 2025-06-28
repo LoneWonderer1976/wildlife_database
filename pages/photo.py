@@ -5,6 +5,8 @@ from datetime import datetime
 from PIL import Image, ImageTk
 import exifread
 from decimal import Decimal
+from ..database import init_db  # Relative import
+from ..ui_components import setup_styles  # Relative import
 
 def add_photo_page(app):
     for widget in app.winfo_children():

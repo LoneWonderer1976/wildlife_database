@@ -2,6 +2,8 @@ import sqlite3
 import tkinter as tk
 from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
+from ..database import init_db  # Relative import
+from ..ui_components import setup_styles  # Relative import
 
 def search_photos_page(app):
     for widget in app.winfo_children():

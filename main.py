@@ -1,12 +1,12 @@
 import tkinter as tk
-from database import init_db
-from ui_components import setup_styles
-from pages.home import create_home_page
-from pages.organism_type import add_organism_type_page
-from pages.organism import add_organism_page
-from pages.book_page import add_page_page
-from pages.photo import add_photo_page, browse_options_page, browse_photos_page, edit_photo_page
-from pages.search import search_photos_page, display_selected_photo
+from wildlife_database.database import init_db
+from wildlife_database.ui_components import setup_styles
+from wildlife_database.pages.home import create_home_page
+from wildlife_database.pages.organism_type import add_organism_type_page
+from wildlife_database.pages.organism import add_organism_page
+from wildlife_database.pages.book_page import add_page_page
+from wildlife_database.pages.photo import add_photo_page, browse_options_page, browse_photos_page, edit_photo_page
+from wildlife_database.pages.search import search_photos_page, display_selected_photo
 
 class WildlifeApp(tk.Tk):
     def __init__(self):

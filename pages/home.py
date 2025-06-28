@@ -1,5 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
+from ..database import init_db  # Relative import
+from ..ui_components import setup_styles  # Relative import
+from .organism_type import add_organism_type_page
+from .organism import add_organism_page
+from .book_page import add_page_page
+from .photo import add_photo_page, browse_options_page, browse_photos_page, edit_photo_page
+from .search import search_photos_page, display_selected_photo
 
 def create_home_page(app):
     for widget in app.winfo_children():
